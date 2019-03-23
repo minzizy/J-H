@@ -1,26 +1,30 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+
 		<title></title>
 	</head>
 	<body>
 <input type="button" value="night" onclick="
-document.querySelector('body').style.backgroundColor='yellow';
-document.querySelector('body').style.backgroundColor='black';">
+var target = document.querySelector('body');
+target.style.backgroundColor='yellow';
+target.style.backgroundColor='black';">
 
 <input type="button" value="day" onclick="
-document.querySelector('body').style.backgroundColor='black';
-document.querySelector('body').style.backgroundColor='yellow';">
+var target = document.querySelector('body');
+target.style.backgroundColor='black';
+target.style.backgroundColor='yellow';">
 
 <input type="button" value="night" onclick="
+var target = document.querySelector('body');
 if(this.value==='night'){
-	document.querySelector('body').style.backgroundColor = 'black';
-	document.querySelector('body').style.color = 'yellow';
+	target.style.backgroundColor = 'black';
+	target.style.color = 'yellow';
 	this.value = 'day';
 }
 else {
-	document.querySelector('body').style.backgroundColor = 'yellow';
-	document.querySelector('body').style.color = 'black';
+	target.style.backgroundColor = 'yellow';
+	target.style.color = 'black';
 	this.value = 'night';
 }
 ">
@@ -29,14 +33,15 @@ else {
  </p>
 
  <input id="night_day2" type="button" value="day" onclick="
+ var target = document.querySelector('body');
  if(this.value==='day'){
- 	document.querySelector('body').style.backgroundColor = 'black';
- 	document.querySelector('body').style.color = 'yellow';
+ 	target.style.backgroundColor = 'black';
+ 	target.style.color = 'yellow';
  	this.value = 'night';
  }
  else {
- 	document.querySelector('body').style.backgroundColor = 'yellow';
- 	document.querySelector('body').style.color = 'black';
+ 	target.style.backgroundColor = 'yellow';
+ 	target.style.color = 'black';
  	this.value = 'day';
  }
  ">

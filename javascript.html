@@ -7,23 +7,25 @@
 	<body>
 <input type="button" value="night" onclick="
 var target = document.querySelector('body');
-target.style.backgroundColor='yellow';
+target.style.backgroundColor='white';
 target.style.backgroundColor='black';">
 
 <input type="button" value="day" onclick="
 var target = document.querySelector('body');
 target.style.backgroundColor='black';
-target.style.backgroundColor='yellow';">
+target.style.backgroundColor='white';">
+
+<br><br><br>
 
 <input type="button" value="night" onclick="
 var target = document.querySelector('body');
 if(this.value==='night'){
 	target.style.backgroundColor = 'black';
-	target.style.color = 'yellow';
+	target.style.color = 'white';
 	this.value = 'day';
 }
 else {
-	target.style.backgroundColor = 'yellow';
+	target.style.backgroundColor = 'white';
 	target.style.color = 'black';
 	this.value = 'night';
 }
@@ -36,11 +38,11 @@ else {
  var target = document.querySelector('body');
  if(this.value==='day'){
  	target.style.backgroundColor = 'black';
- 	target.style.color = 'yellow';
+ 	target.style.color = 'white';
  	this.value = 'night';
  }
  else {
- 	target.style.backgroundColor = 'yellow';
+ 	target.style.backgroundColor = 'white';
  	target.style.color = 'black';
  	this.value = 'day';
  }
